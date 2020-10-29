@@ -34,6 +34,11 @@ public class Tortoise implements Runnable {
                     System.out.println("The Tortoise has reached the Finish Line!");
                     break;
             }
+            try {
+                Thread.sleep(3000L);
+            } catch (InterruptedException e) {
+                System.err.println("The Tortoise has lost the path!");
+            }
 
         }
     }
